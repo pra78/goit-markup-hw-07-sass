@@ -1,0 +1,16 @@
+@import "../utils/mixins";
+
+.examples-section {
+    @include range(320px, 479px) {
+        display: none;
+    }
+
+    @include break(480px) {
+        display: none;
+    }
+
+    @include break(1200px) {
+        display: flex;
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,23 @@
+@import "../utils/mixins";
+
+.menu {
+    @include break(320px) {
+        display: none;
+    }
+
+    @include break(768px) {
+        display: flex;
+    }
+}
+
+.menu-item:not(:last-of-type) {
+    @include break(768px) {
+        margin-right: 40px;
+    }
+}
+
+.menu-item {
+    @include break(768px) {
+        position: relative;
+    }
+}

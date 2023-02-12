@@ -1,0 +1,31 @@
+@import "../utils/variables";
+
+.contact .link {
+    color: $slate-color;
+    font-weight: 400;
+    font-size: 12px;
+
+    @include break(1200px) {
+        font-size: 16px;
+    }
+}
+
+.active-phone {
+    color: $ocean-color;
+}
+
+.active-page {
+    color: $ocean-color;
+}
+
+.active-page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $ocean-color;
+}

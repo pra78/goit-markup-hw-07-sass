@@ -54,3 +54,19 @@
 .advantages-item:not(:last-child) {
     margin-bottom: 72px;
 }
+
+.thumb {
+    @include break(320px) {
+        display: none;
+    }
+
+    @include break(1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        background-color: $cloud-color;
+        margin-bottom: 8px;
+    }
+}

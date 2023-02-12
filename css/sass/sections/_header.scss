@@ -1,0 +1,37 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.main-header {
+    @include break(768px) {
+        border-bottom: 1px solid $cornflower-color;
+    }
+}
+
+.header-container {
+    @include break(320px) {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    @include break(768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.nav-header {
+    @include break(768px) {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include break(1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}

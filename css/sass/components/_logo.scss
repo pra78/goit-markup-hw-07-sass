@@ -1,0 +1,27 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    color: $navy-blue-color;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    @include break(768px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    @include break(1200px) {
+        margin-right: 76px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+
+.web-logo {
+    color: $iris-color;
+}

@@ -1,0 +1,77 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.hero-section {
+    background-color: $navy-blue-color;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @include range(320px, 479px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-mobile.jpg");
+        width: 100%;
+    }
+
+    @include break(320px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-mobile.jpg");
+        width: 480px;
+    }
+
+    @include retina(320px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-mobile@2x.jpg");
+    }
+
+    @include break(768px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-tablet.jpg");
+        width: 768px;
+        padding-bottom: 108px;
+    }
+
+    @include retina(768px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-tablet@2x.jpg");
+    }
+
+    @include break(1200px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-desktop.jpg");
+        width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    @include retina(1200px) {
+        background-image: $linear-gradient-hero,
+                url("../images/hero-image-desktop@2x.jpg");
+    }
+}
+
+.hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    color: var(--white-color);
+    font-weight: 700;
+    line-height: 1.071;
+    text-align: center;
+
+    @include break(320px) {
+        width: 100%;
+        font-size: 36px;
+    }
+
+    @include break(768px) {
+        width: 494px;
+        margin-bottom: 72px;
+        font-size: 56px;
+        line-height: 1.11;
+    }
+}
