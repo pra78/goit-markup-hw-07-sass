@@ -1,0 +1,18 @@
+@import "../utils/mixins";
+
+.section {
+    @include range(320px, 479px) {
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
+
+    @include break(480px) {
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
+
+    @include break(1200px) {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+}

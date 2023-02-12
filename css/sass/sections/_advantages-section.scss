@@ -1,0 +1,56 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.advantages-section {
+    @include range(320px, 479px) {
+        padding-bottom: 24px;
+    }
+
+    @include break(768px) {
+        padding-bottom: 96px;
+    }
+
+    @include break(1200px) {
+        padding-bottom: 120px;
+    }
+}
+
+.advantages-list-header {
+    @include range(320px, 479px) {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        color: $navy-blue-color;
+    }
+
+    @include break(480px) {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        color: $navy-blue-color;
+    }
+
+    @include break(1200px) {
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+}
+
+.advantages-list-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $slate-color;
+
+    @include break(1200px) {
+        font-weight: 400;
+    }
+}
+
+.advantages-item:not(:last-child) {
+    margin-bottom: 72px;
+}
