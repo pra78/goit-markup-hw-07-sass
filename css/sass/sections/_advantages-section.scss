@@ -70,3 +70,49 @@
         margin-bottom: 8px;
     }
 }
+
+.advantages {
+    @include break(768px) {
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+}
+
+.advantages-item {
+    @include break(768px) {
+        width: 356px;
+    }
+
+    @include break(1200px) {
+        width: 264px;
+    }
+}
+
+.advantages-item:not(:last-child) {
+    @include break(768px) {
+        margin-bottom: 0;
+    }
+}
+
+.advantages-item:not(:nth-child(2n)) {
+    @include break(768px) {
+        margin-right: 24px;
+    }
+}
+
+.advantages-item:not(:nth-child(n + 2)) {
+    @include break(768px) {
+        margin-bottom: 72px;
+    }
+
+    @include break(1200px) {
+        margin-bottom: 0;
+    }
+}
+
+.advantages-item:not(:last-of-type) {
+    @include break(1200px) {
+        margin-right: 24px;
+    }
+}

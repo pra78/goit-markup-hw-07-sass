@@ -14,3 +14,14 @@
         padding-top: 0;
     }
 }
+
+@include break(1200px) {
+    .examples-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .no-gap {
+        display: block;
+    }
+}
