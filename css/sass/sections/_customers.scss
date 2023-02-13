@@ -57,6 +57,9 @@
     @include break(768px) {
         margin-bottom: 72px;
     }
+    @include break(1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .customer-item:not(:last-child) {
